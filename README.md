@@ -4,7 +4,7 @@ Micro-service of online image microblogs
 img2web REST API:
 
 Login / Register
-=================
+=======
 
 <b>REQUEST</b>
 <ul>
@@ -16,6 +16,7 @@ Login / Register
 <ul>
     <li>Code: Success - 200 OK Fail - ??? LOGIN ALREADY USED</li>
 </ul>
+--------
 <b>REQUEST</b>
 <ul>
     <li>URL: /login</li>
@@ -26,11 +27,13 @@ Login / Register
 <ul>
     <li>Code: Success - 200 OK Fail - ??? WRONG LOGIN / PASSWORD</li>
 </ul>
+--------
 <b>REQUEST</b>
 <ul>
     <li>URL: /sign_off</li>
     <li>METHOD: POST</li>
 </ul>
+
 <b>RESPONSE</b>
 <ul>
     <li>Code: Success - 200 OK Fail - ??? NOT LOGGED IN</li>
@@ -49,6 +52,7 @@ INTERFACE
     <li>Body if success:
         {[{"image_name" : im_name, "url_to_img" : }, ... ]}</li>
 </ul>
+--------
 <b>REQUEST</b>
 <ul>
     <li>URL: /users</li>
@@ -61,7 +65,7 @@ INTERFACE
     <li>Body if success:
         {[{"user_login": usr_login}, ... ]}</li>
 </ul>
-
+--------
 <b>REQUEST</b>
 <ul>
     <li>URL: /subscribe</li>
