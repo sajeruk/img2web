@@ -68,7 +68,7 @@ INTERFACE
     <li>METHOD: POST</li>
     <li>PARAMS: username</li>
 </ul>
-<b>RES<PONSE</b>
+<b>RESPONSE</b>
 <ul>
     <li>Content-Type: application/json</li>
     <li>Code: Success - 200 FAIL - ??? NOT_LOGGED_IN, ??? - ALREADY_SUBSCRIBED</li>
