@@ -77,3 +77,15 @@ INTERFACE
     <li>Content-Type: application/json</li>
     <li>Code: Success - 200 FAIL - ??? NOT_LOGGED_IN, ??? - ALREADY_SUBSCRIBED</li>
 </ul>
+--------
+<b>REQUEST</b>
+<ul>
+    <li>URL: /post</li>
+    <li>METHOD: POST</li>
+    <li>PARAMS: imageinbinaryformat</li>
+</ul>
+<b>RESPONSE</b>
+<ul>
+    <li>Content-Type: application/json</li>
+    <li>Code: Success - 200 FAIL - ??? NOT_LOGGED_IN</li>
+</ul>
