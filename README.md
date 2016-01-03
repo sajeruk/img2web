@@ -20,7 +20,7 @@ INTERFACE
     <li>Code: Success - 200 OK</li>
     <li>Body if success:
         {[{"login" : login1, image_binary_format" : image_binary_format1},
-          {"login" : login2, image_binary_format" : image_binary_format2}... ]}</li> // id
+          {"login" : login2, image_binary_format" : image_binary_format2}... ]}</li>
 </ul>
 --------
 <b>REQUEST</b>
