@@ -86,15 +86,13 @@ Database structure
 В этой части - просто команды для создания табличек в Cassandra + небольшое описание
 
 <code>
-cqlsh> DESC TABLE img2web.
+cqlsh> DESC TABLE img2web.<br/>
 images         subscriptions  users
 </code>
 
 Итого у нас 3 таблички (в KEYSPACE img2web)
 
 <code>
-cqlsh> DESC TABLE img2web.images
-
 CREATE TABLE images (
   login text,
   ts timeuuid,
@@ -111,6 +109,7 @@ CREATE TABLE subscriptions (
   login_to text,
   PRIMARY KEY ((login_from), login_to)
 )
+CREATE INDEX followers ON subscriptions (login_to);
 </code>
 
 Собственно кто на кого подписан. По этой же табличке построен обратный индекс (чтобы быстро понимать, кто подписан на тебя)
