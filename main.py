@@ -12,7 +12,6 @@ host = "http://localhost"
 def post(login, path):
     with open(path, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
-    print encoded_string
     r = rq.post(host + '/post', data = {'login' : login,
                                         'image' : encoded_string
     })
@@ -34,8 +33,7 @@ def users():
 
 def feed(login, top):
     r = rq.get(host + "/feed?login="+login+"&top="+str(top))
-    #print r.status_code
-    #print r.text
+    print r.status_code
     for n, item in enumerate(r.json()["items"]):
         with open(item["owner"] + str(n), "wb") as image_file:
             image_file.write(base64.b64decode(item["image"]))
